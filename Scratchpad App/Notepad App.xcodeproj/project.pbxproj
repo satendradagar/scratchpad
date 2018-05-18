@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A39500020982AAC007AA3DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A394FFF20982AAC007AA3DD /* AppDelegate.swift */; };
+		9A39500220982AAC007AA3DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39500120982AAC007AA3DD /* ViewController.swift */; };
+		9A39500420982AAC007AA3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A39500320982AAC007AA3DD /* Assets.xcassets */; };
+		9A39500720982AAC007AA3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A39500520982AAC007AA3DD /* Main.storyboard */; };
+		9A39501620982AC3007AA3DD /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A39501520982AC3007AA3DD /* NotificationCenter.framework */; };
+		9A39501920982AC3007AA3DD /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A39501820982AC3007AA3DD /* TodayViewController.swift */; };
+		9A39501C20982AC3007AA3DD /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A39501A20982AC3007AA3DD /* TodayViewController.xib */; };
+		9A39502020982AC3007AA3DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A39501E20982AC3007AA3DD /* InfoPlist.strings */; };
+		9A39502420982AC3007AA3DD /* Notepad.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9A39501320982AC3007AA3DD /* Notepad.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A39502220982AC3007AA3DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A394FF420982AAC007AA3DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A39501220982AC3007AA3DD;
+			remoteInfo = Scratchpad;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A39502820982AC3007AA3DD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A39502420982AC3007AA3DD /* Notepad.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A394FFC20982AAC007AA3DD /* Notepad App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notepad App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A394FFF20982AAC007AA3DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9A39500120982AAC007AA3DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9A39500320982AAC007AA3DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9A39500620982AAC007AA3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9A39500820982AAC007AA3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A39500920982AAC007AA3DD /* Scratchpad_App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scratchpad_App.entitlements; sourceTree = "<group>"; };
+		9A39501320982AC3007AA3DD /* Notepad.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Notepad.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A39501520982AC3007AA3DD /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		9A39501820982AC3007AA3DD /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		9A39501B20982AC3007AA3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		9A39501D20982AC3007AA3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A39501F20982AC3007AA3DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A39502120982AC3007AA3DD /* Scratchpad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Scratchpad.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A394FF920982AAC007AA3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A39501020982AC3007AA3DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A39501620982AC3007AA3DD /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A394FF320982AAC007AA3DD = {
+			isa = PBXGroup;
+			children = (
+				9A394FFE20982AAC007AA3DD /* Scratchpad App */,
+				9A39501720982AC3007AA3DD /* Scratchpad */,
+				9A39501420982AC3007AA3DD /* Frameworks */,
+				9A394FFD20982AAC007AA3DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A394FFD20982AAC007AA3DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A394FFC20982AAC007AA3DD /* Notepad App.app */,
+				9A39501320982AC3007AA3DD /* Notepad.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A394FFE20982AAC007AA3DD /* Scratchpad App */ = {
+			isa = PBXGroup;
+			children = (
+				9A394FFF20982AAC007AA3DD /* AppDelegate.swift */,
+				9A39500120982AAC007AA3DD /* ViewController.swift */,
+				9A39500320982AAC007AA3DD /* Assets.xcassets */,
+				9A39500520982AAC007AA3DD /* Main.storyboard */,
+				9A39500820982AAC007AA3DD /* Info.plist */,
+				9A39500920982AAC007AA3DD /* Scratchpad_App.entitlements */,
+			);
+			path = "Scratchpad App";
+			sourceTree = "<group>";
+		};
+		9A39501420982AC3007AA3DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A39501520982AC3007AA3DD /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A39501720982AC3007AA3DD /* Scratchpad */ = {
+			isa = PBXGroup;
+			children = (
+				9A39501820982AC3007AA3DD /* TodayViewController.swift */,
+				9A39501A20982AC3007AA3DD /* TodayViewController.xib */,
+				9A39501D20982AC3007AA3DD /* Info.plist */,
+				9A39501E20982AC3007AA3DD /* InfoPlist.strings */,
+				9A39502120982AC3007AA3DD /* Scratchpad.entitlements */,
+			);
+			path = Scratchpad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A394FFB20982AAC007AA3DD /* Notepad App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A39500C20982AAC007AA3DD /* Build configuration list for PBXNativeTarget "Notepad App" */;
+			buildPhases = (
+				9A394FF820982AAC007AA3DD /* Sources */,
+				9A394FF920982AAC007AA3DD /* Frameworks */,
+				9A394FFA20982AAC007AA3DD /* Resources */,
+				9A39502820982AC3007AA3DD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A39502320982AC3007AA3DD /* PBXTargetDependency */,
+			);
+			name = "Notepad App";
+			productName = "Scratchpad App";
+			productReference = 9A394FFC20982AAC007AA3DD /* Notepad App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A39501220982AC3007AA3DD /* Notepad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A39502520982AC3007AA3DD /* Build configuration list for PBXNativeTarget "Notepad" */;
+			buildPhases = (
+				9A39500F20982AC3007AA3DD /* Sources */,
+				9A39501020982AC3007AA3DD /* Frameworks */,
+				9A39501120982AC3007AA3DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notepad;
+			productName = Scratchpad;
+			productReference = 9A39501320982AC3007AA3DD /* Notepad.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A394FF420982AAC007AA3DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = CB;
+				TargetAttributes = {
+					9A394FFB20982AAC007AA3DD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					9A39501220982AC3007AA3DD = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 9A394FF720982AAC007AA3DD /* Build configuration list for PBXProject "Notepad App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9A394FF320982AAC007AA3DD;
+			productRefGroup = 9A394FFD20982AAC007AA3DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A394FFB20982AAC007AA3DD /* Notepad App */,
+				9A39501220982AC3007AA3DD /* Notepad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A394FFA20982AAC007AA3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A39500420982AAC007AA3DD /* Assets.xcassets in Resources */,
+				9A39500720982AAC007AA3DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A39501120982AC3007AA3DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A39501C20982AC3007AA3DD /* TodayViewController.xib in Resources */,
+				9A39502020982AC3007AA3DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A394FF820982AAC007AA3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A39500220982AAC007AA3DD /* ViewController.swift in Sources */,
+				9A39500020982AAC007AA3DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A39500F20982AC3007AA3DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A39501920982AC3007AA3DD /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A39502320982AC3007AA3DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A39501220982AC3007AA3DD /* Notepad */;
+			targetProxy = 9A39502220982AC3007AA3DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A39500520982AAC007AA3DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A39500620982AAC007AA3DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9A39501A20982AC3007AA3DD /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A39501B20982AC3007AA3DD /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		9A39501E20982AC3007AA3DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A39501F20982AC3007AA3DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A39500A20982AAC007AA3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9A39500B20982AAC007AA3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		9A39500D20982AAC007AA3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Scratchpad App/Scratchpad_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Scratchpad App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebitss.Scratchpad-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9A39500E20982AAC007AA3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Scratchpad App/Scratchpad_App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Scratchpad App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebitss.Scratchpad-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9A39502620982AC3007AA3DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Scratchpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebitss.Scratchpad-App.Scratchpad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9A39502720982AC3007AA3DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Scratchpad/Scratchpad.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Scratchpad/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.corebitss.Scratchpad-App.Scratchpad";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A394FF720982AAC007AA3DD /* Build configuration list for PBXProject "Notepad App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A39500A20982AAC007AA3DD /* Debug */,
+				9A39500B20982AAC007AA3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A39500C20982AAC007AA3DD /* Build configuration list for PBXNativeTarget "Notepad App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A39500D20982AAC007AA3DD /* Debug */,
+				9A39500E20982AAC007AA3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A39502520982AC3007AA3DD /* Build configuration list for PBXNativeTarget "Notepad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A39502620982AC3007AA3DD /* Debug */,
+				9A39502720982AC3007AA3DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A394FF420982AAC007AA3DD /* Project object */;
+}

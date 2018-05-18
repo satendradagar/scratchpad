@@ -1,0 +1,4 @@
+/* Display name and description for this extension. */
+"CFBundleDisplayName" = "Notepad";
+"com.apple.notificationcenter.widget.description" = "This is a Notepad Widget";
+

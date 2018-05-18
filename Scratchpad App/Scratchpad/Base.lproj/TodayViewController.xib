@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="Scratchpad" customModuleProvider="target">
+            <connections>
+                <outlet property="noteTextView" destination="l4i-K1-WWw" id="b5y-eH-RPM"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <subviews>
+                <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ktg-Ug-o9j">
+                    <rect key="frame" x="0.0" y="0.0" width="310" height="260"/>
+                    <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="c1i-69-SCB">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="260"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView drawsBackground="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="panel" continuousSpellChecking="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="l4i-K1-WWw">
+                                <rect key="frame" x="0.0" y="0.0" width="310" height="260"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="minSize" width="310" height="260"/>
+                                <size key="maxSize" width="463" height="10000000"/>
+                                <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </clipView>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="sIj-Ja-wUi"/>
+                    </constraints>
+                    <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="03y-uT-xNI">
+                        <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                    <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="5cm-zv-f8O">
+                        <rect key="frame" x="294" y="0.0" width="16" height="260"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </scroller>
+                </scrollView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Ktg-Ug-o9j" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="Q0n-bX-irK"/>
+                <constraint firstItem="Ktg-Ug-o9j" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="e9N-Ka-n0M"/>
+                <constraint firstAttribute="bottom" secondItem="Ktg-Ug-o9j" secondAttribute="bottom" id="mWw-5D-0Lz"/>
+                <constraint firstAttribute="trailing" secondItem="Ktg-Ug-o9j" secondAttribute="trailing" constant="10" id="vnd-Im-Xxo"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="218"/>
+        </customView>
+        <userDefaultsController representsSharedInstance="YES" id="Qaa-on-k65"/>
+    </objects>
+</document>
